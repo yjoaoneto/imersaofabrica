@@ -11,9 +11,10 @@
 
     <br>
     <ul>
+        
     {% for postagem in postagens %}
 
-        <li><a href="{% url 'leitura_postagem' postagem.id %}">{{ postagem.classe }}</a>  --  {{ postagem.data_publicacao }} -- {{postagem.email}} -- {{postagem.comentario}}</li>
+        <li><a href="{% url 'leitura_postagem' postagem.id %}">{{ postagem.classe }}</a>  --  {{ postagem.data_publicacao }} -- {{ postagem.email }} -- {{ postagem.comentario }}</li>
 
     {% endfor %}
     </ul>

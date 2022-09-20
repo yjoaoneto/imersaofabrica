@@ -13,7 +13,7 @@
     <p>{{ postagem.destinatário }}</p>
     <p> {{ postagem.email }}</p>
     <p> {{postagem.comentario}}</p>
-    
+  
     <br><br><form action="{% url 'update' postagem.id %}"><input type="submit" value="Update" /></form>
     <br><form action="{% url 'home' %}"><input type="submit" value="Back" /></form>
 </body>

@@ -5,4 +5,4 @@ class FormularioPostagem(ModelForm):
 
     class Meta:
         model = Formulario
-        fields = ['classe', 'email','valor']
+        fields = ['classe', 'email','valor','observacao']
